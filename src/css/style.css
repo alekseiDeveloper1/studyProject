@@ -1,0 +1,124 @@
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    color: #333;
+} 
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+button {
+    cursor: pointer;
+}  
+li {
+    list-style-type: none;
+}
+/* header */
+.header {
+    padding: 0px 0px 100px 0px;
+    background: url(../img/header/bg.jpg) top no-repeat;
+    background-attachment: fixed;
+}
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+.header-row {
+    display: flex;
+    justify-content: space-between;
+    height: 150px;
+    align-items: center;
+}
+.header__logo {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+}
+.header__menu {}
+.menu__icon {}
+.menu__span {}
+.menu__body {}
+.menu__list {
+    display: flex;
+    justify-content: space-between;
+    width: 450px;
+}
+.menu__link {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 18px;
+    color: #333;
+}
+.menu__link:hover {
+    text-decoration: underline;
+}
+.header__phone {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 18px;
+    color: #333;
+    text-decoration: underline;
+}
+.header__phone:hover {
+    text-decoration: none;
+}
+.main {}
+.main__title {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 70px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    line-height: 1;
+}
+.main__subtitle {
+    display: block;
+    text-shadow: none;
+}
+.main__desc {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 30px;
+}
+.main__btn-wrap {
+    width: 300px;
+    height: 50px;
+}
+.btn-wrap {
+    position: relative;
+}
+.btn {
+    position: relative;
+    background: #FF352B;
+    width: 100%;
+    height: 100%;
+    color: white;
+    border: none;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 24px;
+    z-index: 2;
+}
+.btn__decor {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 10px;
+    left: 10px;
+    border: 2px solid white;
+    z-index: 1;
+}
+.main__advantage {}
+.advantage-main {}
+.advantage-main__blocks {}
+.advantage-main__block {}
+.advantage-main__img {}
+.advantage-main__desc {}
+.advantage-main__btn-wrap {}
+.advantage-main__btn {}
+.advantage-main__decor {}
