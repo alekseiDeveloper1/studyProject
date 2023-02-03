@@ -275,7 +275,7 @@ li {
 
 .cars {
     position: relative;
-    min-height: 100vh;
+    min-height: 700px;
 }
 .cars__title {
     text-align: center;
@@ -340,6 +340,60 @@ li {
     width: 650px;
     vertical-align: middle;
     
+}
+
+.reviews {
+    background: #FED100;
+    margin: 0px 0px 100px 0px;
+    padding: 0px 0px 100px 0px;
+}
+.reviews__title {
+    text-align: center;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 30px;
+    margin: 0px 0px 60px 0px;
+    padding: 80px 0px 0px 0px;
+}
+.reviews__blocks {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 0px 60px 0px;
+}
+.reviews__block {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+}
+.reviews__name {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 0.6;
+}
+.reviews__data {
+    line-height: 3;
+}
+.reviews__img {}
+.reviews__desc {
+    flex: 1 1 auto;
+    margin: 0px 0px 18px 0px;
+}
+.reviews__more {
+    text-decoration: underline;
+}
+.reviews__btn {
+    display: block;
+    margin: 0 auto;
+}
+.button {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 20px;
+    width: 250px;
+    height: 50px;
+    background: transparent;
+    border: 1px solid #333333;
 }
 
 
