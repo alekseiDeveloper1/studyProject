@@ -535,6 +535,48 @@ li {
     transition: all 0.1s ease;
 }
 
+.map {
+    position: relative;
+}
+.map-block {
+    position: absolute;
+    top: 150px;
+    left: 450px;
+    background: white;
+    padding: 40px 35px;
+}
+.map-block__title {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 30px;
+    margin: 0px 0px 40px 0px;
+}
+.map-block__info li {
+    margin: 0px 0px 20px 0px;
+}
+.map-block__info li::before {
+    content: "✔";
+    color: #FED100;
+    margin: 0px 15px 0px 0px;
+}
+.map-block__info li a {
+    color:#333333;
+    text-decoration: underline;
+}
+.map-block__social {
+    text-align: right;
+}
+.social a {
+    margin-right: 25px;
+}
+.social a:last-child {
+    margin-right: 0px;
+}
+
+.social svg:hover {
+    fill:#FF352B
+}
+
 
 @keyframes scale {
     0% {
