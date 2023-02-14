@@ -11,6 +11,7 @@ body {
 a {
     text-decoration: none;
     cursor: pointer;
+    color: #333;
 }
 button {
     cursor: pointer;
@@ -575,6 +576,59 @@ li {
 
 .social svg:hover {
     fill:#FF352B
+}
+footer {
+    padding: 100px 0px;
+    background: #FED100;
+}
+.container_grid {
+    display: grid;
+    grid-template-columns: 250px 1fr 200px 1fr;
+    gap: 10%;
+    width: 1200px;
+    margin: 0 auto;
+}
+.footer__info {}
+.info-footer {}
+.info-footer__logo {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 30px;
+    margin: 0px 0px 44px 0px
+}
+.info-footer__politic {
+    margin: 0px 0px 36px 0px;
+}
+.info-footer__data {}
+.footer__nav li {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 20px;
+    margin: 0px 0px 14px 0px;
+}
+.footer__nav li:hover {
+    text-decoration: underline;
+}
+.footer__social {}
+
+.social__mail {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 20px;
+    text-decoration: underline;
+    margin-top: 10px;
+}
+.footer__call {}
+.call-footer {}
+.call-footer__btn {}
+.button {}
+.call-footer__phone {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: underline;
+    margin-top: 5px;
 }
 
 
