@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Study Project</title>
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
     <link href="https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,700" rel="stylesheet" />
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -101,41 +105,45 @@
         <div class="container">
             <div class="prices__title">Цены</div>
             <div class="prices__subtitle">Фиксированная стоимость на переезд под ключ</div>
-            <div class="prices__blocks">
-                <div class="prices__block block-prices">
-                    <div class="block-prices__title">1-комнатная кв-ра</div>
-                    <ul class="block-prices__desc">
-                        <li>1 фургон</li>
-                        <li>2 грузчика</li>
-                        <li>Переезд за 4 часа</li>
-                    </ul>
-                    <div class="block-prices__price">8 490&#8381;</div>
-                    <button class="block-prices__btn btn-prices">Заказать</button>
+            <div class="prices__blocks swiper">
+                <div class="swiper-wrapper">
+                    <div class="prices__block block-prices swiper-slide">
+                        <div class="block-prices__title">1-комнатная кв-ра</div>
+                        <ul class="block-prices__desc">
+                            <li>1 фургон</li>
+                            <li>2 грузчика</li>
+                            <li>Переезд за 4 часа</li>
+                        </ul>
+                        <div class="block-prices__price">8 490&#8381;</div>
+                        <button class="block-prices__btn btn-prices">Заказать</button>
+                    </div>
+                    <div class="prices__block block-prices swiper-slide active">
+                        <div class="block-prices__title">2-комнатная кв-ра</div>
+                        <ul class="block-prices__desc">
+                            <li>1 газель - 3 метра</li>
+                            <li>2 грузчика</li>
+                            <li>Переезд за 4 часа</li>
+                        </ul>
+                        <div class="block-prices__price">10 990&#8381;</div>
+                        <button class="block-prices__btn btn-prices">Заказать</button>
+                    </div>
+                    <div class="prices__block block-prices swiper-slide">
+                        <div class="block-prices__title">3-комнатная кв-ра</div>
+                        <ul class="block-prices__desc">
+                            <li>1 газель - 4 метра</li>
+                            <li>2 грузчика</li>
+                            <li>Переезд за 6 часов</li>
+                        </ul>
+                        <div class="block-prices__price">16 490&#8381;</div>
+                        <button class="block-prices__btn btn-prices">Заказать</button>
+                    </div>
                 </div>
-                <div class="prices__block block-prices active">
-                    <div class="block-prices__title">2-комнатная кв-ра</div>
-                    <ul class="block-prices__desc">
-                        <li>1 газель - 3 метра</li>
-                        <li>2 грузчика</li>
-                        <li>Переезд за 4 часа</li>
-                    </ul>
-                    <div class="block-prices__price">10 990&#8381;</div>
-                    <button class="block-prices__btn btn-prices">Заказать</button>
-                </div>
-                <div class="prices__block block-prices">
-                    <div class="block-prices__title">3-комнатная кв-ра</div>
-                    <ul class="block-prices__desc">
-                        <li>1 газель - 4 метра</li>
-                        <li>2 грузчика</li>
-                        <li>Переезд за 6 часов</li>
-                    </ul>
-                    <div class="block-prices__price">16 490&#8381;</div>
-                    <button class="block-prices__btn btn-prices">Заказать</button>
-                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
             </div>
         </div>
     </section>
-    <section class="cars">
+    <!--<section class="cars">
         <div class="container">
             <div class="cars__title">10 видов автомобилей от 800 кг до 10 тонн</div>
             <div class="cars__tabs">
@@ -307,6 +315,36 @@
                 <div class="call-footer__phone"><a href="tel:88000801213">8 (800)-080-12-13</a></div>
             </div>
         </div>
-    </footer>
+    </footer> -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        // loop: true,
+        breakpoints: {
+            576: {
+                slidesPerView: 1,
+                spaceBetween: 20
+            },
+            // when window width is >= 480px
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 20
+            },
+            // when window width is >= 640px
+            1200: {
+                slidesPerView: 3,
+                spaceBetween: 20
+            }
+        },
+      
+        // Navigation arrows
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+    </script>
+    
 </body>
 </html>
