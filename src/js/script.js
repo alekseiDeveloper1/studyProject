@@ -55,6 +55,41 @@ const render = (data) => {
         processBlocks.append(element);
     });
 };
+
 fetch('http://localhost:3000/data')
     .then((data) => data.json())
     .then((res) => render(res));
+
+// Tabs
+const tabWrap  = document.querySelector('.cars__tabs'),
+    tabs       = document.querySelectorAll('.cars__tab'),
+    carsBlocks = document.querySelectorAll('.cars__block');
+
+const hideBlocks = () => {
+    carsBlocks.forEach((block) => {
+        block.classList.remove('active');
+    });
+    tabs.forEach((tab) => {
+        tab.classList.remove('active');
+    });
+};
+
+const showBlock = (i = 0) => {
+    hideBlocks();
+    tabs[i].classList.add('active');
+    carsBlocks[i].classList.add('active');
+};
+
+showBlock();
+
+tabWrap.addEventListener('click', (e) => {
+    const target = e.target;
+    console.log(target);
+    if (target && target.classList.contains('cars__tab')) {
+        tabs.forEach((tab, index) => {
+            if (tab === target) {
+                showBlock(index);
+            }
+        });
+    }
+});

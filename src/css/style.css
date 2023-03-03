@@ -320,6 +320,7 @@ li {
     line-height: 2.2;
     text-align: center;
     border: 1px solid #EBEBEB;
+    cursor: pointer;
 }
 .cars__tab.active {
     border: 1px solid #ecc100;
@@ -333,6 +334,11 @@ li {
     left: 50%;
     width: 1000px;
     transform: translateX(-50%);
+    opacity: 0;
+    transition: 1s;
+}
+.cars__block.active {
+    opacity: 1;
 }
 .cars__block-left {
     margin: 0px 84px 0px 0px;
@@ -357,8 +363,9 @@ li {
 .block-left__btn {}
 .btn-prices {}
 .cars__block__img {
+    object-fit: cover;
     width: 650px;
-    
+    height: 460px;
 }
 
 .reviews {
